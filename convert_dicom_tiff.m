@@ -1,9 +1,11 @@
 % Instructions:
+%
 % 1. Write the path of the folder where the dicom images are in "path_dcms"
 % 2. Write the desired path for the output tiff image in "path_tiff"
 % 3. Run the script
 %
 % Requirement: image processing toolbox
+
 path_dcms = 'C:\Users\fazevedo\Desktop\dicom';
 path_tiff = 'C:\Users\fazevedo\Desktop\dicom_tiff';
 
