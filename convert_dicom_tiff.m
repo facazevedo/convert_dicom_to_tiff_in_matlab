@@ -7,7 +7,7 @@ path_tiff = 'C:\Users\fazevedo\Desktop\dicom_tiff';
 
 % --- MAIN ---
 
-% If necessary, create "path_diff" or delete the previous image
+% If necessary, create "path_diff"
 if ~exist(path_tiff, "dir")
     mkdir(path_tiff);
 end
