@@ -7,7 +7,7 @@ path_tiff = 'C:\Users\fazevedo\Desktop\dicom_tiff';
 
 % --- MAIN ---
 
-% If necessary, create "path_diff"
+% If necessary create "path_diff"
 if ~exist(path_tiff, "dir")
     mkdir(path_tiff);
 end
@@ -15,6 +15,7 @@ end
 % List all the dicom files inside the directory "path_dcms"
 list_dcms = dir(fullfile(path_dcms, "*.dcm"));
 
+% Convert each image individually deleting previous versions
 for i = 1 : size(list_dcms,1)
     tiff_img = dicomread(fullfile(path_dcms, list_dcms(i).name));
     tiff_img = uint8(255 * mat2gray(tiff_img));
